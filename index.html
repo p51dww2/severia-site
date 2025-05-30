@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
       color: #0c1b33;
+      background-color: #ffffff;
     }
 
     header {
@@ -29,6 +29,22 @@
     header p {
       font-size: 1.2rem;
       margin: 0.5rem 0 0;
+    }
+
+    nav {
+      background-color: #d4af37;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      margin: 0 1.5rem;
+      color: #0c1b33;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
     }
 
     .hero {
@@ -59,27 +75,43 @@
     }
 
     .features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      padding: 4rem 2rem;
-      background: #ffffff;
+      background: url('https://images.unsplash.com/photo-1556012018-6b37f92f02fc?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      padding: 5rem 2rem;
+      color: #ffffff;
     }
 
     .feature {
-      max-width: 300px;
-      border-left: 4px solid #d4af37;
-      padding-left: 1rem;
+      max-width: 700px;
+      margin: 0 auto 4rem;
+      background-color: rgba(12, 27, 51, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
     }
 
     .feature h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+      color: #d4af37;
+      margin-bottom: 1rem;
     }
 
     .feature p {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .contact-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #f5f5f5;
+    }
+
+    .contact-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+      font-size: 1.05rem;
       color: #333;
     }
 
@@ -99,6 +131,13 @@
     <p>Management Group</p>
   </header>
 
+  <nav>
+    <a href="contact.html">Contact</a>
+    <a href="#">Renters Portal</a>
+    <a href="#">Owners Portal</a>
+    <a href="#">About Us</a>
+  </nav>
+
   <section class="hero">
     <h2>Excellence in Every Key. Elegance in Every Room.</h2>
     <p>Partner with a management company that treats your investment like a luxury brand. Professional. Profitable. Personal.</p>
@@ -107,17 +146,22 @@
 
   <section class="features">
     <div class="feature">
-      <h3>Hands-Free Profit</h3>
-      <p>We manage every detail so you can enjoy passive income without the chaos.</p>
+      <h3>Renters Portal</h3>
+      <p>Explore spaces that speak your style. From high-rise havens to modern retreats, our properties offer more than shelter — they offer sanctuary.</p>
     </div>
     <div class="feature">
-      <h3>Reputation-Ready Properties</h3>
-      <p>Every space we manage reflects refinement — curated to attract high-value renters.</p>
+      <h3>Owners Portal</h3>
+      <p>Imagine a partnership that feels effortless. Our portal gives you access to real-time performance insights and hands-free income, all wrapped in luxury service.</p>
     </div>
     <div class="feature">
-      <h3>Clarity, Not Complexity</h3>
-      <p>No fine print. No confusion. Just transparent service and premium results.</p>
+      <h3>About Us</h3>
+      <p>Severia is where property management meets polish. We’re boutique in scale, bold in delivery, and relentlessly committed to your success and satisfaction.</p>
     </div>
+  </section>
+
+  <section class="contact-section">
+    <h3>Contact Us</h3>
+    <p>We're always ready to connect. Reach out today and discover what Severia can do for your property, your lifestyle, or your next move.</p>
   </section>
 
   <footer>
