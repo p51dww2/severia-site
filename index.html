@@ -16,63 +16,76 @@
     header {
       background-color: #0c1b33;
       color: #d4af37;
+      padding: 2rem;
       text-align: center;
-      padding: 1.5rem 1rem 1rem;
-    }
-
-    header img {
-      height: 60px;
     }
 
     header h1 {
-      margin: 0.5rem 0 0;
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin: 0;
     }
 
     header p {
+      font-size: 1.2rem;
       margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      color: #d4af37;
     }
 
-    nav {
-      background-color: #d4af37;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      margin: 0 1.5rem;
-      color: #0c1b33;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    section {
-      padding: 3rem 2rem;
+    .hero {
+      padding: 4rem 2rem;
+      background: #f5f5f5;
       text-align: center;
     }
 
-    section h2 {
-      font-size: 1.8rem;
-      color: #0c1b33;
+    .hero h2 {
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
 
-    section p {
-      font-size: 1.05rem;
-      max-width: 700px;
-      margin: 0 auto;
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #d4af37;
+      color: #0c1b33;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background: #ffffff;
+    }
+
+    .feature {
+      max-width: 300px;
+      border-left: 4px solid #d4af37;
+      padding-left: 1rem;
+    }
+
+    .feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+      font-size: 1rem;
       color: #333;
     }
 
     footer {
       background-color: #0c1b33;
-      color: white;
+      color: #ffffff;
       text-align: center;
       padding: 1.5rem;
       font-size: 0.9rem;
@@ -82,32 +95,29 @@
 <body>
 
   <header>
-    <!-- You can replace this with your logo image if needed -->
-    <!-- <img src="logo.png" alt="Severia Logo"> -->
     <h1>Severia</h1>
-    <p>Excellence in Every Key. Elegance in Every Room.</p>
+    <p>Management Group</p>
   </header>
 
-  <nav>
-    <a href="contact.html">Contact</a>
-    <a href="#">Renters Portal</a>
-    <a href="#">Owners Portal</a>
-    <a href="#">About Us</a>
-  </nav>
-
-  <section id="renters">
-    <h2>Renters Portal</h2>
-    <p>Find your next home with ease. Access your account, pay rent, and enjoy premium service every step of the way.</p>
+  <section class="hero">
+    <h2>Excellence in Every Key. Elegance in Every Room.</h2>
+    <p>Partner with a management company that treats your investment like a luxury brand. Professional. Profitable. Personal.</p>
+    <a href="contact.html">Let’s Work Together</a>
   </section>
 
-  <section id="owners">
-    <h2>Owners Portal</h2>
-    <p>Full control, zero hassle. Monitor performance, track income, and rest easy knowing your property is in expert hands.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Severia Management Group delivers sophisticated, boutique-style property management. We blend luxury hospitality and operational excellence for tenants and property owners alike.</p>
+  <section class="features">
+    <div class="feature">
+      <h3>Hands-Free Profit</h3>
+      <p>We manage every detail so you can enjoy passive income without the chaos.</p>
+    </div>
+    <div class="feature">
+      <h3>Reputation-Ready Properties</h3>
+      <p>Every space we manage reflects refinement — curated to attract high-value renters.</p>
+    </div>
+    <div class="feature">
+      <h3>Clarity, Not Complexity</h3>
+      <p>No fine print. No confusion. Just transparent service and premium results.</p>
+    </div>
   </section>
 
   <footer>
